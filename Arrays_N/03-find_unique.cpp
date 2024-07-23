@@ -1,4 +1,5 @@
 // find number of unique elements in a list
+//Note: We'll keep a ptr at the first element and another ptr at the second element. we will traverse using the second ptr and if any unequal element encounters, we will place it to the next of the element pointing at 'i'
 
 #include<iostream>
 using namespace std;
