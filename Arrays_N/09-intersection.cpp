@@ -10,7 +10,7 @@ vector <int> arrayIntersection (vector<int> &a, vector <int> &b){
 
     while(i<m && j<n){
         if(a[i] < b[j]){
-            i++; // means cannot have a math
+            i++; // means cannot have a match
         }
         else if(b[j] < a[i]){
             j++;
