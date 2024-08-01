@@ -1,8 +1,9 @@
+//Note: Only for sorted arrays
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> sortedArray(vector<int> a, vector<int> b)
+vector<int> arrayUnion(vector<int> a, vector<int> b)
 {
     int n1 = a.size();
     int n2 = b.size();
@@ -44,10 +45,11 @@ vector<int> sortedArray(vector<int> a, vector<int> b)
 
 int main()
 {
-    vector<int> list1{10, 10, 20, 30, 40, 40};
-    vector<int> list2{10, 20, 20, 30, 50, 70, 70};
+    vector<int> arr{1,2,3,4,5};
+    vector<int> arr2{1,2,3,5,6};
 
-    vector<int> ans = sortedArray(list1, list2);
+
+    vector<int> ans = arrayUnion(arr, arr2);
     for (int i : ans)
     {
         cout << i << " ";

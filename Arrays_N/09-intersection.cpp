@@ -1,3 +1,4 @@
+// only for sorted arrays
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -26,11 +27,13 @@ vector <int> arrayIntersection (vector<int> &a, vector <int> &b){
 
 int main()
 {
-    vector <int> arr{2, 3 , 3, 4, 5, 7};
-    vector <int> arr2{1, 2, 3, 3, 4, 8, 9};
+    vector <int> arr{1,2,4,5,7};
+    vector<int> arr2{1,2,3,5,6};
+
+
     vector <int> ans = arrayIntersection(arr, arr2);
 
     for(int i : ans)
-        cout << ans[i] <<" ";
+        cout << i <<" ";
     return 0;
 }

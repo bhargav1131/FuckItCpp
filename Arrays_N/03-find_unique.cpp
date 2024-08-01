@@ -18,8 +18,8 @@ int removeDuplicates(int arr[], int n){
 
 int main()
 {
-    int arr[7] = {1,1,2,2,3,3,3};
-    int ans = removeDuplicates(arr, 7);
+    int arr[6] = {1,1,2,2,3,3};
+    int ans = removeDuplicates(arr, 6);
     cout << "Number of unique elements: " << ans;
 
     return 0;
